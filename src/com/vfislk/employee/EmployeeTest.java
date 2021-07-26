@@ -6,8 +6,11 @@ public class EmployeeTest {
 
 		Employee.companyName = "VFISLK";
 
-		Employee emp1 = new Employee();
-		Employee emp2 = new Employee();
+		Employee emp1 = new Employee(101);
+		Employee emp2 = new Employee(102);
+
+		// Employee emp1=Employee.createInstance();
+		// Employee emp2=Employee.createInstance();
 
 		emp1.empID = 101;
 		emp1.empName = "John";
@@ -17,12 +20,11 @@ public class EmployeeTest {
 		emp2.empName = "Mark";
 		emp2.empSalary = 3000;
 
-		System.out.println(emp1);
-		Employee.printEmployeeDetail(emp1);
-
-		System.out.println(emp2);
-		Employee.printEmployeeDetail(emp2);
-
+		/*
+		 * System.out.println(emp1); Employee.printEmployeeDetail(emp1);
+		 * 
+		 * System.out.println(emp2); Employee.printEmployeeDetail(emp2);
+		 */
 		/*
 		 * System.out.println("----------------------------------");
 		 * System.out.println(emp1.empID); System.out.println(emp1.empName);
@@ -37,10 +39,12 @@ public class EmployeeTest {
 		 * System.out.println(emp2.companyName);
 		 */
 		/*
-		Employee[] employees=new Employee[2];
-		employees[0]=emp1;
-		employees[1]=emp2;
-		*/
+		 * Employee[] employees=new Employee[2]; employees[0]=emp1;
+		 * employees[1]=emp2;
+		 */
+
+		System.out.println(emp1);
+		emp1.pritnEmployeeDetail();
 	}
 
 }
